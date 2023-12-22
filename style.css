@@ -1,0 +1,239 @@
+/* ----------------------------- Universal Styling ----------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('Images/bg.jpg') center/cover fixed no-repeat;
+    position: relative;
+}
+
+
+
+
+
+/* ----------------------------- Overlay Styling ----------------------------- */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+
+
+
+
+/* ----------------------------- Main Container Styling ----------------------------- */
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+
+
+/* ----------------------------- Weather Container Styling ----------------------------- */
+
+.weather-cont {
+    background-color: rgba(255, 255, 255, 0.795);
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    height: 520px;
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+
+
+
+/* ----------------------------- Searchbar Styling ----------------------------- */
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+input {
+    width: 80%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.search-icon {
+    height: 50px;
+    width: 20%;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.search-icon:hover {
+    transform: scale(1.2);
+}
+
+.search-icon:active {
+    padding: 0;
+}
+
+
+
+
+
+
+/* ----------------------------- Display Container Styling ----------------------------- */
+
+.display {
+    transition: left 0.5s ease, opacity 0.5s ease;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    opacity: 1;
+    width: 80%;
+}
+
+
+
+
+
+
+/* ----------------------------- Weather Icon Styling ----------------------------- */
+
+.display img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.Weather-Icon {
+    font-size: 50px;
+}
+
+/* Hidden state for the display */
+.hide {
+    opacity: 0;
+    left: -100%;
+}
+
+
+
+
+
+
+/* ----------------------------- Heading Styling ----------------------------- */
+
+.display h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* ----------------------------- Search Button Styling ----------------------------- */
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+button {
+    background-color: #29bf12;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5c8001;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+.icon {
+    padding: 0;
+}
+
+
+
+
+
+
+
+/* ----------------------------- Display 1 - Temperature Styling ----------------------------- */
+
+#display1 .temperature {
+    font-size: 100px;
+    margin-top: -80px;
+    margin-bottom: -30px;
+}
+
+
+
+
+
+
+/* ----------------------------- Display 2 & 3 - Humidity & WindSpeed Styling ----------------------------- */
+
+#display2 .temperature,
+#display3 .temperature {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+/* ----------------------------- All display Common Styling ----------------------------- */
+
+#display1 .temperature span,
+#display2 .temperature span,
+#display3 .temperature span {
+    font-size: 30px;
+}
+
+
+#display2 .temperature::after,
+#display3 .temperature::after {
+    font-size: 16px;
+    vertical-align: super;
+}
