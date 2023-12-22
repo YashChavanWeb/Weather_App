@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title and linking to external stylesheet -->
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="main">
+        
+        <!-- Weather Container -->
+        <div class="weather-cont">
+            
+            <!-- Weather App HTML -->
+            <div class="container">
+                <!-- Content goes here -->
+            </div>
+
+            <!-- Search bar -->
+            <div class="search">
+                <input type="text" placeholder="Enter Location">
+                <box-icon name='search-alt-2' class="search-icon"></box-icon>
+            </div>
+
+            <!-- Display section 1 -->
+            <div class="display" id="display1">
+                <h1>Weather</h1>
+                <img src="Images/cloudy.png" alt="Weather Icon">
+                <p class="temperature"><span>°C</span></p>
+                <p class="more-info"></p>
+                <button onclick="showDisplayTwo()">See More</button>
+            </div>
+
+            <!-- Display section 2 -->
+            <div class="display hide" id="display2">
+                <h1>Humidity</h1>
+                <img src="Images/humidity.png" alt="Weather Icon">
+                <p class="humidity"><span>0%</span></p>
+                <!-- <p class="more-info">Slightly Cloudy</p> -->
+                <button onclick="showDisplayOne()">Go Back</button>
+                <button onclick="showDisplayThree()">See More</button>
+            </div>
+
+            <!-- Display section 3 -->
+            <div class="display hide" id="display3">
+                <h1>Air Speed</h1>
+                <img src="Images/air.png" alt="Weather Icon">
+                <p class="windspeed"><span>0 Km/h</span></p>
+                <button onclick="showDisplayTwo()">Go Back</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay div -->
+    <div class="overlay"></div>
+
+    <!-- JavaScript files -->
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
